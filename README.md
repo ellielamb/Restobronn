@@ -20,6 +20,8 @@ Setting up a web server is out of the scope of this document. For demonstration 
 
     php -S localhost:8000 -t public
 
+**If you wish to use a different port ensure to update the value of the apiBaseUrl environment variable stored in app/environments/environment.ts**
+
 ### Install NPM dependencies
 Run the following commands from inside the root repository directory:
 
