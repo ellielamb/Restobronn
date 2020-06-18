@@ -1,0 +1,40 @@
+  <ion-card>
+    <ion-card-title>
+      <h2>Laua broneerimine</h2> 
+    </ion-card-title>
+    <ion-item>
+      <ion-label>Vali kuupäev</ion-label>
+      <ion-datetime value="2020-06-16" min="2020" max="2021"
+        [dayShortNames]="customDayShortNames"
+        displayFormat="DDD. MMM DD, YY"
+        monthShortNames="jan, veb, mär, apr, mai, jun, jul, aug, sep, okt, nov, det"></ion-datetime>
+    </ion-item>
+    <ion-item>
+      <ion-label>Kellaaeg</ion-label>
+        <ion-datetime okText="OK" cancelText="Tühista" displayFormat="HH:mm" minuteValues="0,15,30,45"></ion-datetime>    
+    </ion-item>
+    <ion-item>
+      <ion-label>Külaliste arv</ion-label>
+        <ion-select value="1" okText="OK" cancelText="Tühista">
+          <ion-select-option value="1">1</ion-select-option>
+          <ion-select-option value="2">2</ion-select-option>
+          <ion-select-option value="3">3</ion-select-option>
+          <ion-select-option value="4">4</ion-select-option>
+          <ion-select-option value="5">5</ion-select-option>
+          <ion-select-option value="6">6</ion-select-option>
+          <ion-select-option value="7">7</ion-select-option>
+          <ion-select-option value="8">8</ion-select-option>
+          <ion-select-option value="9">9</ion-select-option>
+          <ion-select-option value="10">10</ion-select-option>
+          <ion-select-option value="11">11</ion-select-option>
+          <ion-select-option value="12">12</ion-select-option>
+        </ion-select>
+    </ion-item>
+    <ion-item lines="none">
+      <ion-label>Kommentaarid (valikuline)</ion-label>
+    </ion-item>
+    <ion-item>  
+      <ion-textarea placeholder="Kommentaarid restoranile"></ion-textarea><br>
+    </ion-item>
+    <ion-button class="ion-padding" color="primary" size="large" expand="block" [routerLink]="['/booking-success']">Broneeri</ion-button>
+  <ion-card>

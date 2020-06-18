@@ -1,0 +1,28 @@
+<ion-content class="background">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card class="ion-align-items-center">
+          <ion-card-header>
+            <ion-card-title>Logi sisse</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-list>
+              <ion-item>
+                <ion-label position="floating">E-maili aadress</ion-label>
+                <ion-input placeholder="E-maili aadress"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label position="floating">Parool</ion-label>
+                <ion-input placeholder="Parool"></ion-input>
+              </ion-item>
+              <ion-item lines="none">
+                <ion-button class="ion-padding" color="secondary" size="large" expand="block" [routerLink]="['/restaurants']">Logi sisse</ion-button>
+              </ion-item>
+            </ion-list>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,14 @@
+
+<ion-list lines="none">
+  <ion-list-header>
+    <ion-label><h1>Kõik restoranid</h1></ion-label>
+  </ion-list-header>
+  <ion-item [routerLink]="['/restaurant', restaurant.id]" *ngFor="let restaurant of restaurants">
+    <ion-thumbnail slot="start">
+      <ion-img src="https://baconmockup.com/200/200"></ion-img>
+    </ion-thumbnail>
+    <ion-label>{{ restaurant.name }}</ion-label>
+  </ion-item>
+</ion-list>
+
+

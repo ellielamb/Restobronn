@@ -1,0 +1,27 @@
+<ion-content>
+	<ion-card>
+		<img src="../../assets/dummy.jpg">
+		<ion-item lines="none">
+			<h1>{{ restaurant.name }}</h1>
+			<ion-button class="button-adjust" color="success" slot="end" [routerLink]="['/booking']">Broneerima
+			</ion-button>
+		</ion-item>
+		<ion-item>
+			<p class="small-info">{{ restaurant.address}}, {{restaurant.city }}</p>
+		</ion-item>
+		<ion-item lines="none" *ngIf="restaurant.opening_hours">Avamisajad</ion-item>
+		<ion-item *ngFor="let openingHour of restaurant.opening_hours">
+			<ion-label>{{ openingHour.day_of_week }}: {{ openingHour.opening_time }}-{{ openingHour.closing_time }}</ion-label>
+		</ion-item>
+		<ion-item>
+			<p>{{ restaurant.description }}</p>
+		</ion-item>
+		<ion-item lines="none"><h3>Kommentaarid</h3></ion-item>
+		<ion-item *ngIf="restaurant.comments">
+			<div class="flex-container"*ngFor="let comment of restaurant.comments">
+				<ion-label>{{ comment.name }}</ion-label>
+				<p>{{ comment.comment }}</p>
+			</div>
+		</ion-item>
+	</ion-card>
+</ion-content>

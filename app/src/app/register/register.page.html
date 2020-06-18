@@ -1,0 +1,43 @@
+<ion-content class="background">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Registreeru</ion-card-title>
+          </ion-card-header>
+
+          <ion-card-content>
+            <ion-list>
+              <ion-item>
+                <ion-label position="floating">Eesnimi</ion-label>
+                  <ion-input placeholder="Eesnimi"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label position="floating">Perekonnanimi</ion-label>
+                  <ion-input placeholder="Perekonnanimi"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label position="floating">E-maili aadress</ion-label>
+                  <ion-input placeholder="E-maili aadress"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label position="floating">Parool</ion-label>
+                  <ion-input placeholder="Parool"></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-label position="floating">Korda parooli</ion-label>
+                  <ion-input placeholder="Korda parooli"></ion-input>
+              </ion-item>
+            </ion-list>
+              <ion-checkbox></ion-checkbox>
+              <ion-label class="small">Nõustun Restobronni kasutajatingimustega</ion-label>
+
+            <ion-button class="ion-padding" color="secondary" size="large" expand="block" [routerLink]="['/reg-success']">Registreeru</ion-button>
+
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

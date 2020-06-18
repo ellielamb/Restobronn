@@ -1,0 +1,49 @@
+<div>
+  <ion-menu content-id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menüü</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+      <ion-list>
+        <ion-list-header>
+          Navigeeri
+        </ion-list-header>
+        <ion-menu-toggle auto-hide="false">
+          <ion-item button [routerLink]="['/home']">
+            <ion-icon slot="start" name='home'></ion-icon>
+            <ion-label>
+              Kodu
+            </ion-label>
+          </ion-item>
+          <ion-item button [routerLink]="['/restaurants']">
+            <ion-icon slot="start" name='restaurant'></ion-icon>
+            <ion-label>
+              Restoranid
+            </ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-toggle>
+            <ion-button>
+              <ion-icon slot="icon-only" name="menu"></ion-icon>
+            </ion-button>
+          </ion-menu-toggle>
+        </ion-buttons>
+        <ion-title>Restobronn</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">
+      <ion-router-outlet></ion-router-outlet>
+    </ion-content>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+ion-content {
+  --background: url(..\..\assets\brick-wall.jpg) no-repeat center center ;
+}
+
+
+.ion-align-items-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto; 
+    margin-top: 20%;
+    text-align: center;
+  }

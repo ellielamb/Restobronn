@@ -1,0 +1,16 @@
+ion-content {
+    --background: url(..\..\assets\brick-wall.jpg) right ;  
+}
+
+.card-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto; 
+    margin-top: 40%;
+    text-align: center;
+}
+
+.button {
+    margin: 5% 5% 10% 5%;
+}
