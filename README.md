@@ -24,11 +24,13 @@ Setting up a web server is out of the scope of this document. For demonstration 
 Run the following commands from inside the root repository directory:
 
 > cd app
+
 > npm install
 
 ### Run Ionic
 In order to launch the app run the following from inside the root repository directory:
 > cd app
+
 > ionic serve
 
 
