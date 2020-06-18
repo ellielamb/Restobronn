@@ -7,6 +7,7 @@ In order to run the app, [Lumen](https://lumen.laravel.com/docs/7.x) needs to be
  Run the following commands from inside the root repository directory:
 
 > cd api
+
 > composer install
 
 ### Configure Lumen
