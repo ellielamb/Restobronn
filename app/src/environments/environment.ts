@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiBaseUrl: 'http://api.restobronn.local'
+  apiBaseUrl: 'http://localhost:8000'
 };
 
 /*
